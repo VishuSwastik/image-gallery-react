@@ -1,0 +1,45 @@
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .galleryflex {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px;
+    
+  }
+  
+  .galleryimage {
+    width: 250px;
+    height: 250px;
+    border: solid gray 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .galleryimage:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalimage {
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+  }
